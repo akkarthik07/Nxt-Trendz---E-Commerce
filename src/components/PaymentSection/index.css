@@ -1,0 +1,136 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.payment-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.payments-sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #334155;
+}
+
+/* Payment Methods */
+.payment-method-inputs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.payment-method-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-method-input-container:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+/* Radio Button */
+.payment-method-input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Label */
+.payment-method-label {
+  font-size: 16px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.payment-method-label.disabled-label {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Order Details */
+.order-details {
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.order-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Confirm Button */
+.confirm-order-button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-order-button:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.confirm-order-button:hover:enabled {
+  background-color: #2563eb;
+}
+
+/* Success Message */
+.success-message {
+  font-size: 18px;
+  font-weight: 600;
+  color: #16a34a;
+  text-align: center;
+  background-color: #dcfce7;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.popup-content {
+  border: none;
+  padding: 0;
+  background: transparent; /* removes white default block */
+  width: auto;
+}
